@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <!--div宽度小于iframe可隐藏竖直滚动条-->
+        iframe{
+            height: 1080px;
+            width: 1450px;
+        }
+        div{
+            width: 1435px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://www.bilibili.com/" target="bili">bilibili</a>
+    <div> <iframe src="https://taobao.com" name="bili" frameborder="0" scrolling="yes"></iframe></div>
+</body>
+</html>
