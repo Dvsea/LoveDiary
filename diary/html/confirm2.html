@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: darkseagreen;
+        }
+
+        form {
+            background-color: rgb(209, 236, 188);
+            padding: 30px;
+            width: 500px;
+            height: 300px;
+            margin: 150px auto;
+            border: 5px solid rgb(144, 160, 191);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        button {
+            position: absolute;
+            width: 80px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+        .alert-danger{
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <div class="mb-3 text-center">
+                <label for="answer" class="form-label" style="font-weight: bold;">回答问题查看</label>
+                <input type="text" class="form-control" id="answer" aria-describedby="Help" autocomplete="off">
+                <div id="Help" class="form-text">之前喝的奶茶新开的店名(3字)</div>
+            </div>
+            <div class="alert alert-danger" role="alert">输入有误!!!</div>
+            <button type="submit" class="btn btn-primary">确定</button>
+        </form>
+    </div>
+    <script src="../js/confirm2.js"></script>
+</body>
+
+</html>

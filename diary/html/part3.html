@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            background-color:rgb(16, 79, 152);
+            opacity: .97;
+        }
+        p{
+            text-indent: 4rem;
+            color: #fff;
+            font-size: 18px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;
+            margin: 10px 160px;
+        }
+        h3 {
+            width: 700px;
+            height: 50px;
+            margin: 100px auto;
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+            color: rgb(104, 228, 137);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(225, 240, 8, 0.5);
+            margin-bottom: 90px;
+        }
+        div{
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>开不了口</h3>
+    <p>当你点击页面时，突然响起的背景音乐是否感到熟悉？这首歌是初中放学的铃声，回看过去，时间真的过得好快。一眨眼，我们从懵懂无知的小孩变成即将步入社会的大人。</p>
+    <p>要说对你最开始的印象是在初一，那会儿你是多么的“小男孩”性格。走在过道都得被你推一下，记不清当时说了什么，好像是回骂了你。之后没有对你有太多的关注，直到有一次科学考试后，上课讲着成绩的事情，你看着自己的试卷，难过得掉泪。忘记当时考了怎样，当时就心想着想帮助你，可是又止于自己的薄脸皮。</p>
+    <p>我们的故事真正开始于那个暑假，历经几次的小坎，我们终于确定关系。在回校拿相册回去的路上，记得当时你想创造我们二人的单独时间，你想支走另外一个，可是失败，我心想你好傻。再之后，是2018年8月份的七夕，你傻傻的留言了99个消息，可我令你失望，一个一个将它删除，当时的我并不知道这样做之后会让你流泪。现在想，我很是遗憾和抱歉。还有那个冬天，一兆韦德我们等公交，你嚷着手冷，就把手捂我脸上，而我无趣得让你搓搓。</p>
+    <p>你觉得自己胖，我们约体育馆跑步，也是唯一一次。因为不同校，不同学校制度，假期约着不易，你会抽空打电话，在宿舍走廊里，办公室里... 小长假我们约着在东谷湖散步，在亭子下面聊天，第一次互相拥抱。在书城你送我围巾，送我小猪杯，还有笔、眼罩、信..你笑着说，我们在秘密交易，或许里面包含了你的不解。你会因为我买笔送到校门口开心，并且好好保管带“心型”的那支笔，会因为我抱不动你然后跑步减肥，太多太多。一直是感性的你对我好，而我没有考虑过你的感受。因为我的胆小，不成熟，薄脸皮，不敢接受你对我的浪漫，不懂在下车分别后回头看看你，不会在散步的时候与你并排走，不敢在你想拥抱的时候伸开手，不知道你晚上出门，回家解释的不易，让你一次又一次流泪，差劲的我弄丢了傻傻好女孩。</p>
+    <p>看到这，大概能猜到之后会说什么。这次，我想勇敢说，“我喜欢你，分开四年之久，心里仍然有你”。我知道，人外有人，自己并不优秀，可能不能与你相配，但不想再后悔一次。勇敢的人才有爱情，这次说出藏在心里的话，“杨小平，我们能在一起吗”。</p>
+    <div>
+        <button class="btn btn-warning btn-lg">Yes</button>
+        <button class="btn btn-danger btn-lg">No</button>
+    </div>    
+    <script>
+        var warning = document.querySelector(".btn-warning")
+        var danger = document.querySelector(".btn-danger")
+        warning.onclick=(event)=>{
+            event.preventDefault()
+            location.href="love.html"
+        }
+        danger.onclick=(event)=>{
+            event.preventDefault()
+            location.href="sorry.html"
+        }
+    </script>
+</body>
+</html>
